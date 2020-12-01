@@ -1,0 +1,19 @@
+# parkingLotProblem
+This interactive parking lot without any human and humanity 
+
+## How to Run This Program
+This application basically java maven standard 
+the first thing,  need to do for running it. You need install maven 2 or maven 3 on your machine
+after that just run using this steps:
+
+- first step clone or extract this zip file 
+- second step its enter to the directory that had been extracted before
+- run this command :
+	```
+	./setup # for install and compile the code
+		or
+	./bin file_input.txt # for bulked import
+	```
+	
+# Thanks
+ 
