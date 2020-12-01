@@ -1,0 +1,30 @@
+# Add script to:
+# * Install dependencies
+# * Build/Compile
+# * Run Test Suit to validate
+#
+# After this is run, bin/parking_lot
+# should Just Work.
+#!/bin/bash
+
+
+echo "Parking lot application"
+echo "Start to compile"
+
+DIR=parkingLot
+
+if [ ! -d "$DIR" ]; then 
+  echo "directory with named ${dir} not found"
+  exit
+fi
+
+cd $DIR
+
+if ! mvn -v &> /dev/null
+then
+  echo "please install maven for compiling this application"
+  exit
+fi
+
+mvn clean install
+cd ..
